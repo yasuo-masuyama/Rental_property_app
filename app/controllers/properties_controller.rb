@@ -20,7 +20,6 @@ class PropertiesController < ApplicationController
     else
       render :new
     end
-    # binding.pry
   end
 
   def confirm

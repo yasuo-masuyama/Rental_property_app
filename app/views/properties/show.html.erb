@@ -12,13 +12,13 @@
 
 <% number = 0 %>
 <% @property.nearest_stations.each do |n| %>
-  <h2>最寄り駅<% number += 1%></h2>
+  <h2>最寄り駅<%= number += 1%></h2>
 
-  <p>路線名 <% n.route_name %></p>
+  <p>路線名 <%= n.route_name %></p>
 
-  <p>駅名 <% n.station_name%></p>
+  <p>駅名 <%= n.station_name%></p>
 
-  <p>徒歩分数 <% n.walking_minutes%></p>
+  <p>徒歩分数 <%= n.walking_minutes%></p>
 <% end %>
 
 <%= link_to '編集', edit_property_path(@property) %>
